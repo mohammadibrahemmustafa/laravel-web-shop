@@ -1,4 +1,4 @@
-This project is to provide a template for php projects
+This project is to create a shop using laravel. The template repose you can find it [here](https://github.com/mohammadibrahemmustafa/docker-php-laravel-template)
 
 It contains: 
 
@@ -12,11 +12,11 @@ It contains:
 # How to use:
 1. Clone the project (you need to have ssh key)
 ```
-git clone git@github.com:mohammadibrahemmustafa/docker-php-laravel-template.git
+git clone git@github.com:mohammadibrahemmustafa/laravel-web-shop.git
 ```
 2. Go to the project
 ```
-    cd docker-php-template
+    cd laravel-web-shop
 ```
 3. Copy .env file
 ```
@@ -42,6 +42,4 @@ composer install
 php artisan migrate
 ```
 
- Now the website should be accessible via [this link](http://localhost:8000) and the phpmyadmin via [this link](http://localhost:8081/index.php) 
-
- This project is based on the [blog](https://polcode.com/resources/blog/how-to-run-a-laravel-application-locally-with-docker/) 
+ Now the website should be accessible via [this link](http://localhost:8000) and the phpmyadmin via [this link](http://localhost:8081/index.php)
