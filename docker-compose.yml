@@ -25,6 +25,15 @@ services:
             - "${PORT_REDIS}:6379"
         volumes:
             - "./data/redis:/data"
+    myadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: ${APP_NAME}_phpmyadmin
+        environment:
+            PMA_HOST: database
+        ports:
+            - ${PORT_PHPMYADMIN}:80
+        depends_on:
+            - database
     php:
         build:
             context: ./etc/php
